@@ -24,10 +24,8 @@ function downloadHashedFile() {
         if (lineArr[lineArr.length - 1] == "") {
             lineArr.pop();
         }
-        console.log(lineArr.length);
 
         for (var i = 0; i < lineArr.length; i++) {
-            console.log(lineArr[i]);
             if (i > maxLineNumber - 1) {
                 window.confirm("The number of lines in the file is too large. Please divide into small files under " + maxLineNumber + " line numbers.");
                 isProcessing(false);
@@ -64,7 +62,6 @@ function isProcessing(flg) {
     } else {
         // hash process finish
         $("#downloadBtn").text("Download");
-        console.log($("#inputFile")[0].files[0]);
         $("#downloadBtn").prop("disabled", $("#inputFile")[0].files[0] == null);
         $("#inputFile").prop("disabled", false);
     }

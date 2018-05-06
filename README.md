@@ -23,7 +23,7 @@ dcdb704109a454784b81229d2b05f368692e758bfa33cb61d04c1b93791b0273
 ### Remark
 * Ragarding input file's line separator, either "CSRF" or "LF" is fine.
 * Terminating newline is ignored.
-* If the input file's line number is over 1,000,000, you have to divide into small files.
+* If the input file's line number is over the limit, you have to divide into small files.
 
 ## Demo
 [https://nobby0024.github.io/hash_tool/](https://nobby0024.github.io/hash_tool/)
